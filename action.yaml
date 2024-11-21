@@ -5,8 +5,6 @@ runs:
     - name: Download files
       run: |
         curl -Ls https://github.com/slaclab/accel_unit_test_execs/raw/main/mad8s -o "$PWD/mad8s"
-        curl -Ls https://github.com/slaclab/accel_unit_test_execs/raw/main/lc_unit_test_bmad -o "$PWD/lc_unit_test_bmad"
         chmod +x "$PWD/mad8s"
-        chmod +x "$PWD/lc_unit_test_bmad"
         echo "$PWD" >> $GITHUB_PATH
       shell: bash
